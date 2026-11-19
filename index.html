@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <script src="cabeca.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Index</h1>
+     <div class="app-container">
+    <!-- Cabeçalho -->
+    <header>
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="imagens/minilogo.jpeg" width="35" height="35"></img>
+        </div>
+        <div class="brand-text">
+          <h1 class="font-serif">Laços Solidários</h1>
+          <span>Início</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button class="notif-btn" aria-label="Notificações">
+          <i data-lucide="bell" size="21"></i>
+          <span class="notif-dot"></span>
+        </button>
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Perfil" class="avatar">
+      </div>
+    </header>
+
+    <main>
+      <!-- Banner Hero -->
+      <section class="hero-card">
+        <div class="hero-pill">
+          <i data-lucide="users" size="13"></i>
+          Comunidade Viva &amp; Ativa
+        </div>
+        <h2 class="font-serif">Pequenos gestos, grandes transformações</h2>
+        <p>Conectando corações dispostos a apoiar com quem mais precisa de acolhimento e solidariedade local.</p>
+        
+        <button class="btn-primary-amber">
+          <i data-lucide="asterisk" size="16"></i>
+          SOS • Pedir Ajuda
+        </button>
+        <button class="btn-secondary-white">
+          <i data-lucide="compass" size="16"></i>
+          Ver Mapa Local
+        </button>
+      </section>
+
+      <!-- Filtros -->
+      <section class="filter-section">
+        <div class="filter-header">
+          <span class="filter-label">FILTRAR POR CAUSA</span>
+          <button class="filter-action">
+            <i data-lucide="sliders-horizontal" size="13"></i>
+            Filtros
+          </button>
+        </div>
+        <div class="filter-chips">
+          <button class="chip active">
+            <i data-lucide="apple" size="14"></i>
+            Alimentos
+          </button>
+          <button class="chip">
+            <i data-lucide="shirt" size="14"></i>
+            Roupas
+          </button>
+          <button class="chip">
+            <i data-lucide="hand-heart" size="14"></i>
+            Voluntariado
+          </button>
+        </div>
+      </section>
+
+      <!-- Lista de Pedidos Urgentes -->
+      <section>
+        <div class="section-header">
+          <div>
+            <h3 class="font-serif">Pedidos Urgentes Próximos</h3>
+            <p>Ações que precisam do seu apoio hoje</p>
+          </div>
+          <a href="#" class="see-all">Ver todos</a>
+        </div>
+
+        <div class="cards-list">
+          
+          <!-- Card 1 -->
+          <article class="request-card">
+            <div class="card-top-badges">
+              <span class="badge badge-green">
+                <i data-lucide="shirt" size="12"></i>
+                Roupas e Agasalhos
+              </span>
+              <span class="badge badge-red">
+                ● Restam 3 dias
+              </span>
+            </div>
+
+            <div class="card-body">
+              <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=200&q=80" alt="Campanha de Agasalho" class="card-thumb">
+              <div class="card-info">
+                <h4 class="font-serif">Campanha de Agasalho...</h4>
+                <p>Arrecadação de cobertores e casacos para 45 famílias...</p>
+              </div>
+            </div>
+
+            <div class="card-location">
+              <i data-lucide="map-pin" size="13"></i>
+              <span>A 1.2 km de você • Bairro Esperança</span>
+            </div>
+
+            <div class="card-footer-split">
+              <div class="avatar-stack">
+                <span class="mini-avatar">M</span>
+                <span class="mini-avatar">J</span>
+                <span class="mini-avatar">+8</span>
+              </div>
+              <button class="btn-help-sm">
+                Quero Ajudar
+                <i data-lucide="arrow-right" size="14"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="request-card">
+            <div class="card-top-badges">
+              <span class="badge badge-amber">
+                <i data-lucide="utensils" size="12"></i>
+                Alimentos
+              </span>
+              <span class="status-meta">
+                <i data-lucide="clock" size="12"></i>
+                Meta em andamento
+              </span>
+            </div>
+
+            <div class="card-body">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=200&q=80" alt="Cestas Básicas" class="card-thumb">
+              <div class="card-info">
+                <h4 class="font-serif">Cestas Básicas para Vila...</h4>
+                <p>Distribuição emergencial de alimentos não perecíveis e leite...</p>
+              </div>
+            </div>
+
+            <div class="progress-box">
+              <div class="progress-labels">
+                <span>Progresso das doações</span>
+                <span>68% (34/50 cestas)</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+
+            <div class="card-location">
+              <i data-lucide="map-pin" size="13"></i>
+              <span>A 2.5 km de você • Vila Nova</span>
+            </div>
+
+            <button class="btn-help-full">
+              <i data-lucide="heart" size="15"></i>
+              Quero Ajudar
+            </button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="request-card">
+            <div class="card-top-badges">
+              <span class="badge badge-green">
+                <i data-lucide="sprout" size="12"></i>
+                Voluntariado
+              </span>
+              <span class="status-meta">
+                <i data-lucide="calendar" size="12"></i>
+                Sáb, 09h - 13h
+              </span>
+            </div>
+
+            <div class="card-body">
+              <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=200&q=80" alt="Voluntários para Horta" class="card-thumb">
+              <div class="card-info">
+                <h4 class="font-serif">Voluntários para Horta ...</h4>
+                <p>Mutirão de sábado para plantio e manutenção da horta que...</p>
+              </div>
+            </div>
+
+            <div class="card-location">
+              <i data-lucide="map-pin" size="13"></i>
+              <span>A 3.8 km de você • Jardim das Flores</span>
+            </div>
+
+            <div class="card-footer-split">
+              <span class="vacancies-text">4 vagas disponíveis</span>
+              <button class="btn-help-sm">
+                Quero Ajudar
+                <i data-lucide="arrow-right" size="14"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="request-card">
+            <div class="card-top-badges">
+              <span class="badge badge-green">
+                <i data-lucide="graduation-cap" size="12"></i>
+                ONGs &amp; Abrigos
+              </span>
+              <span class="status-meta">
+                <i data-lucide="badge-check" size="12"></i>
+                ONG Verificada
+              </span>
 </body>
+
 </html>
