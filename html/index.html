@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laços Solidários - Início</title>
+  <!-- Conectando o arquivo CSS -->
+  <link rel="stylesheet" href="css/styleindex.css" />
+  <!-- Ícones simples (Feather Icons) -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
-    <h1>Index</h1>
+
+  <!-- CABEÇALHO DESKTOP -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="logo">
+        <img src="minilogo.jpeg" alt="30" width="40px" height="40px">
+      </div>
+      <nav class="menu">
+        <a href="#inicio" class="ativo">Início</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#doacoes">Doações</a>
+        <a href="#ongs">ONGs</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- BANNER PRINCIPAL (HERO) -->
+    <section id="inicio" class="banner">
+      <span class="etiqueta">REDE SOLIDÁRIA ATIVA</span>
+      <h1>Pequenos gestos, grandes transformações.</h1>
+      <p>
+        Conectamos quem precisa de apoio emergencial a vizinhos e entidades
+        prontos para estender a mão com respeito e carinho.
+      </p>
+      <div class="botoes-banner">
+        <button class="btn btn-amarelo" onclick="mostrarMensagem('Pedir Ajuda')">
+          Pedir Ajuda
+        </button>
+        <button class="btn btn-verde" onclick="mostrarMensagem('Quero Ajudar')">
+          Quero Ajudar
+        </button>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="secao">
+      <h2>Categorias</h2>
+      <div class="grid-categorias">
+        <div class="card-categoria">
+          <i data-feather="shopping-bag"></i>
+          <h3>Alimentos</h3>
+          <p>Cestas básicas</p>
+        </div>
+        <div class="card-categoria">
+          <i data-feather="archive"></i>
+          <h3>Agasalhos</h3>
+          <p>Roupas e frio</p>
+        </div>
+        <div class="card-categoria">
+          <i data-feather="plus-circle"></i>
+          <h3>Saúde</h3>
+          <p>Remédios</p>
+        </div>
+        <div class="card-categoria">
+          <i data-feather="home"></i>
+          <h3>Apoio Lar</h3>
+          <p>Móveis e itens</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIDOS URGENTES -->
+    <section id="pedidos" class="secao">
+      <h2>Pedidos Urgentes Próximos</h2>
+      <div class="grid-pedidos">
+        <article class="card-pedido">
+          <span class="urgencia">Urgência Alta</span>
+          <h3>Fraldas e Leite em Pó Especial</h3>
+          <p>Mãe de gêmeos recém-nascidos necessita de latas de leite fórmula e fraldas P/M.</p>
+          <p class="local">📍 Vila Mariana, São Paulo (1.2 km)</p>
+          <button class="btn btn-escuro" onclick="oferecerAjuda('Fraldas e Leite em Pó')">
+            Oferecer Ajuda
+          </button>
+        </article>
+
+        <article class="card-pedido">
+          <span class="urgencia verde">Cesta Básica</span>
+          <h3>Alimentos Não Perecíveis</h3>
+          <p>Família de 5 pessoas desalojada pelas chuvas precisa de arroz, feijão, óleo e água.</p>
+          <p class="local">📍 Saúde, São Paulo (2.4 km)</p>
+          <button class="btn btn-escuro" onclick="oferecerAjuda('Alimentos Não Perecíveis')">
+            Oferecer Ajuda
+          </button>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>Laços Solidários &copy; 2026 - Projeto de Apresentação</p>
+  </footer>
+
+  <!-- Conectando o arquivo JavaScript -->
+  <script src="script.js"></script>
 </body>
+
 </html>
