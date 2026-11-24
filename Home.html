@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laços Solidários - Início</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #FAF9F5;
+      color: #1F2937;
+      line-height: 1.6;
+    }
+
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    
+    .topo {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid #E5E7EB;
+      padding: 15px 0;
+    }
+
+    .topo-conteudo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .link-logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .icone-coracao {
+      width: 90px;
+      height: 50px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .link-logo:hover .icone-coracao {
+      transform: scale(1.06);
+    }
+
+    .link-inicio {
+      text-decoration: none;
+      color: #4B5563;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .link-inicio.ativo,
+    .link-inicio:hover {
+      color: #22C55E;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #4B5563;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .menu a.ativo,
+    .menu a:hover {
+      color: #22C55E;
+    }
+
+    /* Banner Principal */
+    .banner {
+      background: linear-gradient(135deg, #14532D, #15803D);
+      color: #FFFFFF;
+      padding: 40px;
+      border-radius: 16px;
+      margin-top: 30px;
+    }
+
+    .etiqueta {
+      background-color: rgba(0, 0, 0, 0.25);
+      color: #4ADE80;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .banner h1 {
+      font-size: 32px;
+      margin: 15px 0 10px 0;
+    }
+
+    .banner p {
+      max-width: 600px;
+      color: #E5E7EB;
+      margin-bottom: 25px;
+    }
+
+    /* Botões */
+    .botoes-banner {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-amarelo {
+      background-color: #FACC15;
+      color: #1F2937;
+    }
+
+    .btn-verde {
+      background-color: #22C55E;
+      color: #FFFFFF;
+    }
+
+    .btn-escuro {
+      background-color: #14532D;
+      color: #FFFFFF;
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Seções e Grids */
+    .secao {
+      margin-top: 40px;
+    }
+
+    .secao h2 {
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .grid-categorias {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .card-categoria {
+      background-color: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-categoria svg {
+      color: #22C55E;
+      margin-bottom: 10px;
+    }
+
+    .grid-pedidos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card-pedido {
+      background-color: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .urgencia {
+      display: inline-block;
+      background-color: #FEF3C7;
+      color: #B45309;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .urgencia.verde {
+      background-color: #DCFCE7;
+      color: #15803D;
+    }
+
+    .local {
+      font-size: 13px;
+      color: #6B7280;
+      margin-top: 10px;
+    }
+
+    /* Rodapé */
+    .rodape {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      color: #6B7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO DESKTOP -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="logo">
+        <a href="#inicio" class="link-logo" aria-label="Página Inicial">
+          <img
+            src="Coração Liso.jpg"
+            alt="Ícone de coração"
+            class="icone-coracao"
+          />
+        </a>
+        <a href="#inicio" class="link-inicio ativo">Início</a>
+      </div>
+      <nav class="menu">
+        <a href="#pedidos">Pedidos</a>
+        <a href="#doacoes">Doações</a>
+        <a href="#ongs">ONGs</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- BANNER PRINCIPAL (HERO) -->
+    <section id="inicio" class="banner">
+      <span class="etiqueta">REDE SOLIDÁRIA ATIVA</span>
+      <h1>Pequenos gestos, grandes transformações.</h1>
+      <p>
+        Conectamos quem precisa de apoio emergencial a vizinhos e entidades
+        prontos para estender a mão com respeito e carinho.
+      </p>
+      <div class="botoes-banner">
+        <button class="btn btn-amarelo" onclick="mostrarMensagem('Pedir Ajuda')">
+          Pedir Ajuda
+        </button>
+        <button class="btn btn-verde" onclick="mostrarMensagem('Quero Ajudar')">
+          Quero Ajudar
+        </button>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="secao">
+      <h2>Categorias</h2>
+      <div class="grid-categorias">
+        <div class="card-categoria">
+          <i data-feather="shopping-bag"></i>
+          <h3>Alimentos</h3>
+          <p>Cestas básicas</p>
+        </div>
+        <div class="card-categoria">
+          <i data-feather="archive"></i>
+          <h3>Agasalhos</h3>
+          <p>Roupas e frio</p>
+        </div>
+        <div class="card-categoria">
+          <i data-feather="plus-circle"></i>
+          <h3>Saúde</h3>
+          <p>Remédios</p>
+        </div>
+        <div class="card-categoria">
+          <i data-feather="home"></i>
+          <h3>Apoio Lar</h3>
+          <p>Móveis e itens</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIDOS URGENTES -->
+    <section id="pedidos" class="secao">
+      <h2>Pedidos Urgentes Próximos</h2>
+      <div class="grid-pedidos">
+        <article class="card-pedido">
+          <span class="urgencia">Urgência Alta</span>
+          <h3>Fraldas e Leite em Pó Especial</h3>
+          <p>Mãe de gêmeos recém-nascidos necessita de latas de leite fórmula e fraldas P/M.</p>
+          <p class="local">📍 Vila Mariana, São Paulo (1.2 km)</p>
+          <button class="btn btn-escuro" onclick="oferecerAjuda('Fraldas e Leite em Pó')">
+            Oferecer Ajuda
+          </button>
+        </article>
+
+        <article class="card-pedido">
+          <span class="urgencia verde">Cesta Básica</span>
+          <h3>Alimentos Não Perecíveis</h3>
+          <p>Família de 5 pessoas desalojada pelas chuvas precisa de arroz, feijão, óleo e água.</p>
+          <p class="local">📍 Saúde, São Paulo (2.4 km)</p>
+          <button class="btn btn-escuro" onclick="oferecerAjuda('Alimentos Não Perecíveis')">
+            Oferecer Ajuda
+          </button>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>Laços Solidários &copy; 2025 - Projeto de Apresentação</p>
+  </footer>
+
+  <!-- Conectando o arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
