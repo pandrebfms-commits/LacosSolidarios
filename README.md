@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="imgs/minilogo.jpeg" alt="Logo Laços Solidários" width="180">
+  <img src="imgs/logo_fundo_transparente.png" alt="Logo Laços Solidários" width="180">
   <h1>Laços Solidários</h1>
   <p><strong>"Pequenos gestos, grandes transformações."</strong></p>
   <p>Plataforma web Mobile-First criada para conectar quem precisa de apoio emergencial a vizinhos, doadores, voluntários e ONGs parceiras.</p>
@@ -67,7 +67,7 @@ LacosSolidarios/
 ├── css/
 │   └── style_index.css     # Folha de estilos principal e variáveis globais
 ├── imgs/
-│   ├── minilogo.jpeg       # # Logotipo principal (JPEG)
+│   ├── minilogo.jpeg       # Logotipo principal (JPEG)
 │   └── minilogo.svg        # Versão vetorial reduzida do logotipo (SVG)
 ├── js/
 │   └── script.js           # Scripts de interatividade e armazenamento local
