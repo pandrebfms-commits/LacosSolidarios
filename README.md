@@ -2,61 +2,66 @@
   <img src="imgs/logo_fundo_transparente.png" alt="Logo Laços Solidários" width="180">
   <h1>Laços Solidários</h1>
   <p><strong>"Pequenos gestos, grandes transformações."</strong></p>
-  <p>Plataforma web Mobile-First criada para conectar quem precisa de apoio emergencial a vizinhos, doadores, voluntários e ONGs parceiras.</p>
+  <p>Projeto social que conecta pessoas que precisam de ajuda a pessoas dispostas a colaborar, transformando a solidariedade em uma ação acessível à comunidade.</p>
 </div>
 
 ---
 
 ## Sobre o Projeto
 
-O **Laços Solidários** é uma rede de apoio comunitário desenvolvida com foco em acessibilidade, clareza visual e praticidade no uso pelo celular. A plataforma centraliza pedidos urgentes, doações de itens essenciais, ações de voluntariado e divulgação de instituições sociais em um único ambiente.
+O **Laços Solidários** é uma plataforma criada para aproximar pessoas e fortalecer os vínculos comunitários. A iniciativa reúne e divulga pedidos de ajuda, doações, serviços voluntários e ações sociais em um único ambiente, ampliando as possibilidades de participação no dia a dia.
 
-O projeto dialoga diretamente com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU:
-
-* **ODS 1** — Erradicação da Pobreza
-* **ODS 10** — Redução das Desigualdades
-* **ODS 11** — Cidades e Comunidades Sustentáveis
+> *"Quando cada gesto se transforma em ação, juntos construímos uma comunidade mais solidária."*
 
 ---
 
 ## Estrutura da Plataforma
 
-* **Início:** Painel principal com acesso rápido para pedir ou oferecer ajuda, busca por categorias, pedidos urgentes em destaque e indicadores de impacto coletivo.
-* **Pedidos:** Mural para divulgação e acompanhamento de solicitações de apoio na comunidade, organizadas por categoria e localização por bairro/cidade.
-* **Doações:** Espaço dedicado à oferta e solicitação de itens físicos, como alimentos, roupas, produtos de higiene e fraldas.
-* **Voluntariado:** Área para conectar pessoas dispostas a oferecer tempo e apoio cotidiano a quem precisa na região.
-* **ONGs:** Vitrine para instituições e projetos sociais apresentarem suas causas, campanhas ativas e necessidades prioritárias.
+- **Início (Topo e Busca):** Cabeçalho de navegação, apresentação da rede solidária, acessos diretos (*Pedir Ajuda* e *Quero Ajudar*) e campo de busca por localização e tipo de necessidade.
+- **Pedidos de Ajuda:** Lista de solicitações da comunidade com descrição, bairro/cidade, distância aproximada, barra de progresso da meta e botão *Oferecer Ajuda*.
+- **Doações e Voluntariado:** Espaços voltados para divulgar doações, serviços voluntários e diversas formas de colaborar com a região.
+- **ONGs e Participação Comunitária:** Divulgação de iniciativas e ONGs parceiras, indicadores de impacto coletivo e chamada para cadastro de comércios como ponto de coleta (*Seja um Ponto Solidário*).
 
 ---
 
 ## Tecnologias Utilizadas
 
-* **HTML5** — Estruturação semântica das páginas
-* **CSS3** — Estilização responsiva (Mobile-First) e variáveis globais
-* **JavaScript** — Interatividade, filtros, formulários e manipulação do DOM
-* **LocalStorage** — Armazenamento local de dados no navegador
-* **Git e GitHub Pages** — Versionamento de código e publicação
+- **HTML5** — Estruturação semântica das páginas
+- **CSS3** — Estilização responsiva (Mobile-First) e variáveis globais
+- **JavaScript** — Interatividade, filtros, formulários e manipulação do DOM
+- **LocalStorage** — Armazenamento local de dados no navegador
+- **Git e GitHub** — Versionamento de código e colaboração
 
 ---
 
 ## Identidade Visual
 
+### Logo do Projeto
+
+O símbolo do **Laços Solidários** traduz o propósito da plataforma por meio de suas cores principais:
+
+- **Roxo:** Empatia, cuidado e acolhimento — o coração que une quem precisa a quem pode ajudar.
+- **Laranja:** Ação, energia e solidariedade — o gesto concreto que transforma o dia de alguém.
+
 ### Tipografia
-* **Títulos principais:** Montserrat
-* **Subtítulos e botões:** Poppins
-* **Corpo de texto:** Merriweather
+
+- **Títulos principais:** Montserrat
+- **Subtítulos e textos:** Poppins
+- **Corpo de texto:** Merriweather
 
 ### Paleta de Cores
 
-| Aplicação | Cor | Hexadecimal |
-| :--- | :--- | :--- |
-| Identidade Principal e Filtro Ativo | Roxo Vibrante | `#5B21B6` / `#6D28D9` |
-| Badges e Fundos de Destaque | Lilás Claro / Pastel | `#EDE9FE` / `#F5F3FF` |
-| Ações Principais e Urgência | Laranja Vibrante | `#F97316` / `#EA580C` |
-| Badges e Botões Secundários | Laranja Claro / Pêssego | `#FFEDD5` / `#FFF7ED` |
-| Alerta de Prazo | Coral Suave / Vermelho | `#FEE2E2` / `#DC2626` |
-| Superfícies e Cartões | Branco / Lavanda Suave | `#FFFFFF` / `#F8F7FC` / `#F3F0FA` |
-| Textos | Grafite / Cinza Médio | `#1F2937` / `#374151` / `#6B7280` |
+| Categoria | Cor | Hexadecimal | Aplicação |
+| :--- | :--- | :--- | :--- |
+| Neutros e Superfícies | Grama | `#ABB194` | Cor principal do projeto |
+| Neutros e Superfícies | Branco / Fundo | `#FFFFFF` | Fundo das páginas e cartões |
+| Neutros e Superfícies | Cinza Escuro | `#37393E` | Títulos e textos principais |
+| Neutros e Superfícies | Cinza Médio | `#6B6B6B` | Textos de apoio e legendas |
+| Roxo / Lilás (Identidade Principal) | Roxo Principal | `#6B3FA0` | Botões de ação e destaques |
+| Roxo / Lilás (Identidade Principal) | Lilás Claro | `#E8DFF5` | Fundos suaves de cartões |
+| Laranja / Âmbar (Ação e Urgência) | Laranja Vibrante | `#F26A21` | Chamadas para ação |
+| Laranja / Âmbar (Ação e Urgência) | Laranja Claro | `#FCE3CE` | Fundos de aviso |
+| Vermelho / Coral (Alerta de Prazo) | Vermelho Suave | `#F7B3A8` | Indicadores de prazo |
 
 ---
 
@@ -65,12 +70,13 @@ O projeto dialoga diretamente com os Objetivos de Desenvolvimento Sustentável (
 ```text
 LacosSolidarios/
 ├── css/
-│   └── style_index.css     # Folha de estilos principal e variáveis globais
+│   └── style_index.css              # Folha de estilos principal e variáveis globais
 ├── imgs/
-│   ├── minilogo.jpeg       # Logotipo principal (JPEG)
-│   └── minilogo.svg        # Versão vetorial reduzida do logotipo (SVG)
+│   ├── logo_fundo_transparente.png  # Logotipo principal com fundo transparente
+│   ├── minilogo.jpeg                # Versão reduzida do logotipo (JPEG)
+│   └── minilogo.svg                 # Versão vetorial reduzida do logotipo (SVG)
 ├── js/
-│   └── script.js           # Scripts de interatividade e armazenamento local
-├── paginas/                # Páginas secundárias da aplicação
-├── index.html              # Página inicial
-└── README.md               # Documentação do repositório
+│   └── script.js                    # Scripts de interatividade e armazenamento local
+├── paginas/                         # Páginas secundárias da aplicação
+├── index.html                       # Página inicial
+└── README.md                        # Documentação do repositório
